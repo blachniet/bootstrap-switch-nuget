@@ -30,3 +30,9 @@ Building The Package
 1. Set the version of [bootstrap-switch](http://www.bootstrap-switch.org/) in the `package.json`
 2. Update the version in the `.nuspec`
 3. Execute `.\build.ps1`
+
+License
+----------
+
+* [This Repo's License](LICENSE)
+* [Bootstrap Switch License](https://github.com/nostalgiaz/bootstrap-switch/blob/master/LICENSE)
