@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Bootstrap.Switch</id>
-    <title>Bootstrap Switch</title>
+    <id>Bootstrap.Switch.Less</id>
+    <title>Bootstrap Switch Less Source</title>
     <version>2.0.1</version>
     <authors>Mattia Larentis</authors>
     <owners>Brian Lachniet</owners>
