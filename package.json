@@ -1,0 +1,10 @@
+{
+  "name": "bootstrap-switch-nuget",
+  "version": "0.0.0",
+  "description": "Builds the NuGet package for bootstrap-switch",
+  "repository": "http://github.com/blachniet",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "bootstrap-switch": "~2.0.1"
+  }
+}
