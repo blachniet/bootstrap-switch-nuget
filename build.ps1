@@ -6,8 +6,8 @@ function Package-BootstrapSwitch {
     mkdir "$pkgDir\Content\Content\bootstrap-switch"
 
     cp $nuspec "$pkgDir"
-    cp node_modules\bootstrap-switch\build\js\* "$pkgDir\Content\Scripts"
-    cp node_modules\bootstrap-switch\build\css\* "$pkgDir\Content\Content\bootstrap-switch" -Recurse
+    cp node_modules\bootstrap-switch\dist\js\* "$pkgDir\Content\Scripts"
+    cp node_modules\bootstrap-switch\dist\css\* "$pkgDir\Content\Content\bootstrap-switch" -Recurse
 
     nuget pack "$pkgDir\$nuspec" -OutputDirectory pkg
 }
@@ -20,7 +20,7 @@ function Package-BootstrapSwitchLess {
     mkdir "$pkgDir\Content\Content\bootstrap-switch"
 
     cp $nuspec "$pkgDir"
-    cp node_modules\bootstrap-switch\build\js\* "$pkgDir\Content\Scripts"
+    cp node_modules\bootstrap-switch\dist\js\* "$pkgDir\Content\Scripts"
     cp node_modules\bootstrap-switch\src\less\* "$pkgDir\Content\Content\bootstrap-switch" -Recurse
 
     nuget pack "$pkgDir\$nuspec" -OutputDirectory pkg
