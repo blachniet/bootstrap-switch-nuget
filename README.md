@@ -21,15 +21,12 @@ Building The Package
 
 ### Requirements
 
-- [NuGet Command Line Utility](http://nuget.org/nuget.exe)
 - [npm](https://www.npmjs.org/)
-- PowerShell
 
 ### Steps
 
-1. Set the version of [bootstrap-switch](http://www.bootstrap-switch.org/) in the `package.json`
-2. Update the version in the `.nuspec`
-3. Execute `.\build.ps1`
+1. Set the version of `npmVersion` and `nugetVersion` in [build.fsx]
+2. `.\build.cmd publish=true`
 
 License
 ----------
