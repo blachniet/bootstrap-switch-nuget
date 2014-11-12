@@ -20,6 +20,6 @@
   </metadata>
   <files>
     <file src="node_modules\bootstrap-switch\dist\js\*" target="Content\Scripts" />
-    <file src="node_modules\bootstrap-switch\src\less\*" target="Content\Content\bootstrap-switch" />
+    <file src="node_modules\bootstrap-switch\src\less\**\*" target="Content\Content\bootstrap-switch" />
   </files>
 </package>
