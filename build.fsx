@@ -3,8 +3,8 @@ open Fake
 open Fake.ProcessHelper
 open Fake.Git
 
-let npmVersion = "3.2.0"
-let nugetVersion = "3.2.0-fake3"
+let npmVersion = "3.2.1"
+let nugetVersion = "3.2.1"
 let pkgDir = "./pkg/"
 let publish = (getBuildParamOrDefault "publish" "false") = "true"
 
