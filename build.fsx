@@ -36,6 +36,7 @@ Target "NuGetCss" (fun _ ->
     "Bootstrap.Switch.nuspec"
         |> NuGet (fun p -> 
             {p with
+                Project = "Bootstrap.Switch"
                 WorkingDir = "./"
                 OutputPath = pkgDir
                 Version = nugetVersion
@@ -48,6 +49,7 @@ Target "NuGetLess" (fun _ ->
     "Bootstrap.Switch.Less.nuspec"
         |> NuGet (fun p -> 
             {p with
+                Project = "Bootstrap.Switch.Less"
                 WorkingDir = "./"
                 OutputPath = pkgDir
                 Version = nugetVersion
