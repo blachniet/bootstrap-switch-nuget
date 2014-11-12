@@ -25,7 +25,7 @@ Building The Package
 
 ### Steps
 
-1. Set the version of `npmVersion` and `nugetVersion` in [build.fsx]
+1. Set the version of `npmVersion` and `nugetVersion` in (build.fsx)
 2. `.\build.cmd publish=true`
 
 License
