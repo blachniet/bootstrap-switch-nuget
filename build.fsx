@@ -59,13 +59,13 @@ Target "NuGetLess" (fun _ ->
 )
 
 Target "GitPush" (fun _ ->
-    push "./"
+    Branches.push "./"
 )
 
 Target "GitTag" (fun _ ->
     let tagName = ("v"+nugetVersion)
-    tag "./" tagName
-    pushTag "./" "origin" tagName
+    Branches.tag "./" tagName
+    Branches.pushTag "./" "origin" tagName
 )
 
 Target "Clean" DoNothing
