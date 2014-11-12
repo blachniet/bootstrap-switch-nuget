@@ -18,9 +18,7 @@ Target "CleanPkg" (fun _ ->
 
 Target "NpmInstall" (fun _ ->
     let npm64 = @"C:\Program Files\nodejs\npm.cmd"
-    trace npm64
     let npm86 = combinePaths ProgramFilesX86 @"nodejs\npm.cmd"
-    trace npm86
     let npm = if fileExists npm64 then npm64 else npm86
     if (fileExists npm <> true) then failwith "NPM not found"
 
