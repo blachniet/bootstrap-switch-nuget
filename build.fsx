@@ -1,9 +1,10 @@
 ﻿#r @"tools/FAKE/tools/FakeLib.dll"
 open Fake
 open Fake.ProcessHelper
+open Fake.Git
 
-let npmVersion = "3.2.1"
-let nugetVersion = "3.2.1-fake0"
+let npmVersion = "3.2.0"
+let nugetVersion = "3.2.0-fake1"
 let pkgDir = "./pkg/"
 let publish = (getBuildParamOrDefault "publish" "false") = "true"
 
@@ -57,6 +58,16 @@ Target "NuGetLess" (fun _ ->
             })
 )
 
+Target "GitPush" (fun _ ->
+    push "./"
+)
+
+Target "GitTag" (fun _ ->
+    let tagName = ("v"+nugetVersion)
+    tag "./" tagName
+    pushTag "./" "origin" tagName
+)
+
 Target "Clean" DoNothing
 Target "Default" DoNothing
 
@@ -64,6 +75,8 @@ Target "Default" DoNothing
     ==> "NpmInstall"
     ==> "NuGetCss"
     ==> "NuGetLess"
+    =?> ("GitPush", publish)
+    =?> ("GitTag", publish)
     ==> "Default"
 
 "CleanNpm" ==> "CleanPkg" ==> "Clean"
