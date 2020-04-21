@@ -1,7 +1,7 @@
 Bootstrap Switch for NuGet
 =============================
 
-This project is responsible for creating the [bootstrap-switch](https://www.nuget.org/packages/Bootstrap.Switch/) package on NuGet for the [Bootstrap Switch](http://www.bootstrap-switch.org/) project.
+This project is responsible for creating the [bootstrap-switch](https://www.nuget.org/packages/Bootstrap.Switch/) package on NuGet for the [Bootstrap Switch][1] project.
 
 Installation
 --------------
@@ -13,7 +13,7 @@ To install bootstrap-switch, run the following command in the [Package Manager C
 Issues
 --------
 
-- Report [Bootstrap Switch](http://www.bootstrap-switch.org/) issues [here](https://github.com/nostalgiaz/bootstrap-switch/issues)
+- Report [Bootstrap Switch][1] issues [here](https://github.com/Bttstrp/bootstrap-switch/issues)
 - Report NuGet package issues [here](https://github.com/blachniet/bootstrap-switch-nuget/issues)
 
 Building The Package
@@ -32,4 +32,6 @@ License
 ----------
 
 * [This Repo's License](LICENSE)
-* [Bootstrap Switch License](https://github.com/nostalgiaz/bootstrap-switch/blob/master/LICENSE)
+* [Bootstrap Switch License](https://github.com/Bttstrp/bootstrap-switch/blob/master/LICENSE)
+
+[1]: https://github.com/Bttstrp/bootstrap-switch
