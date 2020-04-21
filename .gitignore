@@ -2,3 +2,5 @@ node_modules/
 pkg/
 *.nupkg
 tools/FAKE/
+.fake/
+package-lock.json
